@@ -1,22 +1,50 @@
 body{
   background-color: #EECF9E;
+  height: 50vh;
+  font-family: 'Abel', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: 'Abel', sans-serif;
 }
-
+#title-div{
+  width: 300px;
+  text-align: start;
+}
+#info-div{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  
+}
 progress{
   height: 50px;
   width: 300px;
   -webkit-appearance: none;
+  transform: rotateZ(-90deg);
+}
+progress::before{
+  content: "10,000 Tokens";
+  position: absolute;
+  left: -70px;
+  bottom: 15px;
+  transform: rotateZ(90deg);
+}
+progress::after{
+  content: "100,000 Tokens";
+  position: absolute;
+  left: 310px;
+  bottom: 5px;
   transform: rotateZ(90deg);
 }
 progress::-webkit-progress-bar {
   background-color: #9C8A79;
   border-radius: 40px;
-
 }
 progress::-webkit-progress-value {
   background-color: #BE795E;
