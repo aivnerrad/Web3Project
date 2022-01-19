@@ -1,0 +1,24 @@
+body{
+  background-color: #EECF9E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Abel', sans-serif;
+}
+
+progress{
+  height: 50px;
+  width: 300px;
+  -webkit-appearance: none;
+  transform: rotateZ(90deg);
+}
+progress::-webkit-progress-bar {
+  background-color: #9C8A79;
+  border-radius: 40px;
+
+}
+progress::-webkit-progress-value {
+  background-color: #BE795E;
+  border-radius: 40px 0px 0px 40px;
+}
